@@ -123,3 +123,20 @@
 .id-no li.id-lbl{color:#ffb3a7}.id-no li.id-lbl:before{content:none}
 .id-no li{background:#ffe1dc;border:2px solid #e0442b;color:#b3200b;text-decoration:none;font-weight:800}
 .id-no li:before{content:"✕";color:#e0442b;margin-right:5px;font-weight:900}
+/* Claude 계정 지원 강조 카드 (마이원) */
+.cl-sec{padding:44px 0}
+.cl-card{display:flex;align-items:center;gap:28px;background:#fff8f3;border:3px solid #d97757;border-radius:16px;padding:28px 32px;box-shadow:0 12px 0 rgba(0,0,0,.18)}
+.cl-logo{flex-shrink:0;width:84px;height:84px;border-radius:22px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(217,119,87,.25)}
+.cl-logo svg{width:54px;height:54px}
+.cl-body{flex:1;min-width:0}
+.cl-kicker{margin:0;font-size:12px;font-weight:800;letter-spacing:.08em;color:#c2603f}
+.cl-card h2{margin:6px 0 0;font-size:30px;line-height:1.35;font-weight:800;letter-spacing:-.045em;color:#2a1a14}
+.cl-card h2 mark{background:linear-gradient(transparent 58%,#ffd3c2 58%);color:#c2603f}
+.cl-sub{margin:8px 0 0;font-size:14px;line-height:1.7;color:#6b5249}
+.cl-badge{flex-shrink:0;margin:0;text-align:center;background:#d97757;color:#fff;border-radius:12px;padding:14px 20px}
+.cl-badge small{display:block;font-size:12px;opacity:.9}
+.cl-badge b{display:block;font-size:18px;font-weight:800;margin-top:2px;white-space:nowrap}
+@media(max-width:760px){.cl-sec{padding:32px 0}.cl-card{flex-direction:column;align-items:flex-start;gap:16px;padding:24px 20px}
+.cl-logo{width:64px;height:64px;border-radius:18px}.cl-logo svg{width:40px;height:40px}
+.cl-card h2{font-size:23px}.cl-badge{align-self:stretch;display:flex;justify-content:center;align-items:baseline;gap:8px;padding:12px}}
+@media print{.cl-card{box-shadow:none}}
