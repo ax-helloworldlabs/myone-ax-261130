@@ -116,3 +116,10 @@
 .event-date .date-tile i{font-size:13px}
 @media(max-width:390px){.event-date .date-tile{width:78px}.event-date .date-tile strong{font-size:24px}}
 .event-date .date-tiles+div>b{white-space:nowrap}
+/* 신분증 불가 항목 강조 (마이원) */
+.id-ok,.id-no{align-items:center}
+.id-ok li.id-lbl,.id-no li.id-lbl{background:none;border:0;padding:6px 4px 6px 0;min-width:34px;font-size:14px;font-weight:800;text-decoration:none}
+.id-ok li.id-lbl{color:#c9f0d4}.id-ok li.id-lbl:before{content:none}
+.id-no li.id-lbl{color:#ffb3a7}.id-no li.id-lbl:before{content:none}
+.id-no li{background:#ffe1dc;border:2px solid #e0442b;color:#b3200b;text-decoration:none;font-weight:800}
+.id-no li:before{content:"✕";color:#e0442b;margin-right:5px;font-weight:900}
